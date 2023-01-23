@@ -204,6 +204,7 @@ footer
 
 footer::before
 {
+    pointer-events: none;
     content: "";
     position: absolute;
     inset: 5px;
