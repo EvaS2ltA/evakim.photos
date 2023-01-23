@@ -1,0 +1,54 @@
+.ContactForm
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    position: relative;
+    width: 80%;
+    height: 80%;
+}
+
+.ContactForm form fieldset
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3em;
+    padding: 2em;
+}
+
+.ContactForm .InputBox input[type="text"],
+.ContactForm .InputBox input[type="tel"],
+.ContactForm .InputBox input[type="email"],
+.ContactForm .InputBox textarea
+{
+    margin-left: 1em;
+    padding: 5px;
+    background-color: rgba(247, 247, 247, 0.6);
+    border: none;
+    outline: none;
+    transition: all 0.3s ease-in;
+}
+
+.ContactForm .InputBox input[type="text"]:focus,
+.ContactForm .InputBox input[type="tel"]:focus,
+.ContactForm .InputBox input[type="email"]:focus,
+.ContactForm .InputBox textarea:focus
+{
+    box-shadow: 0 0 10px rgb(112, 112, 112);
+}
+
+.ContactForm .InputBox input[type="submit"]
+{
+    cursor: pointer;
+    padding: 1.1em;
+    transition: all 0.3s ease-in;
+    border: none;
+    outline: none;
+    font-size: large;
+}
+
+.ContactForm .InputBox input[type="submit"]:hover
+{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgb(187, 118, 54);
+}

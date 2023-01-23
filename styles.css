@@ -122,9 +122,17 @@ section
     align-items: center;
     position: relative;
     top: 20%;
-    left: 0%;
+    left: 0;
     width: 100%;
     height: 70%;
+}
+
+section .About
+{
+    width: 75%;
+    font-family: 'Aboreto';font-size: 22px;
+    font-size: 1.3em;
+    color: rgb(78, 77, 77);
 }
 
 section .MainNavigation
@@ -152,7 +160,7 @@ section .MainNavigation ul li
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid aliceblue;
+    border: 1px solid rgb(159, 159, 160);
     background-color: rgba(255, 255, 255, 0.2);
     width: 300px;
     height: 180px;
@@ -175,7 +183,7 @@ section .MainNavigation ul li a
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Aboreto';font-size: 22px;
     text-decoration: none;
     font-size: large;
     color: rgb(93, 94, 95);
@@ -187,8 +195,8 @@ footer
     position: fixed;
     align-items: center;
     padding-left: 0.8em;
-    bottom: 0%;
-    left: 0%;
+    bottom: 0;
+    left: 0;
     height: 5%;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.2);

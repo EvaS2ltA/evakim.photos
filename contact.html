@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact me</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/contact.css">
+    <link href='https://fonts.googleapis.com/css?family=Aboreto' rel='stylesheet'>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
 <body>
@@ -42,10 +44,48 @@
     </header>
 
     <section class="content">
+        <div class="ContactForm">       <!--Contact Form starts here-->
+            <h2>Contact me</h2>
+
+            <form>
+                <fieldset>
+                    <div class="InputBox">
+                        <span>First Name</span><input type="text" name="First-Name">
+                    </div>
+
+
+                    <div class="InputBox">
+                        <span>Last Name</span><input type="text" name="Last-Name">
+                    </div>
+
+
+                    <div class="InputBox">
+                        <span>Type your message here</span><textarea name="message"></textarea>
+                    </div>
+
+
+                    <div class="InputBox">
+                        <span>Your contact number:</span><input type="tel" name="Phone-Number" pattern="[0-9]{10}">
+                    </div>
+
+
+                    <div class="InputBox">
+                        <span>Your e-mail address:</span><input type="email" name="Email">
+                    </div>
+
+
+                    <div class="InputBox">
+                        <input type="submit" value="Send">
+                    </div>
+
+
+                </fieldset>
+            </form>
+        </div>
 
     </section>
 
-    <footer></footer>
+    <footer>Eva Kim &#8226; Twin Cities, Minnesota USA &#8226; &nbsp; <a href="mailto:evakim.portfolio@gmail.com">evakim.portfolio@gmail.com</a></footer>
 
 
 </body>
