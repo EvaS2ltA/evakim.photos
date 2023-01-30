@@ -1,0 +1,179 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Aboreto';
+}
+
+body
+{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/img/backgr.JPG);
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 20% 75% 5%;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3.5em;
+    padding-right: 2.7em;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.LeftContainer
+{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.HomeButton
+{
+    font-size: 4em;
+}
+
+.HomeButton a
+{
+    text-decoration: none;
+    color: #131313;
+}
+
+.RightContainer
+{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.SocialMedia
+{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.SocialMedia a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+
+.UserPic
+{
+    margin-left: 0.3em;
+    font-size: 4em
+}
+
+section
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavigationMenu
+{
+    width: 100%;
+    height: 100%;
+padding-top: 6em;
+}
+
+.NavigationMenu ul
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.NavigationMenu ul li
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgb(159, 159, 160);
+}
+
+.NavigationMenu ul li a
+{
+    text-decoration: none;
+    color: rgb(54, 54, 54);
+    padding: 3.5em;
+    font-size: 1em;
+}
+
+.HomeButton,
+.SocialMedia li,
+.UserPic,
+.NavigationMenu ul li
+{
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.HomeButton:hover,
+.SocialMedia li:hover,
+.UserPic:hover,
+.NavigationMenu ul li:hover
+{
+    transform: scale(1.1);
+}
+
+footer
+{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    font-size: 0.8em;
+}
+
+@media (max-width: 1000px)
+{
+    body 
+    {
+        grid-template-rows: 20% 75% 5%;
+    }
+
+    .LeftContainer
+    {
+        width: 20%;
+        height: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .SocialMedia
+    {
+        flex-direction: column;
+    }
+
+    .NavigationMenu
+    {
+        padding-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .NavigationMenu ul
+    {
+        flex-direction: column;
+    }
+}
