@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio — Eva Kim</title>
+    <script src="/portfolio.js" defer></script>     <!--This page will have clickable images that will work with javascript-->
     <link rel="stylesheet" href="/index.css">
     <link rel="stylesheet" href="/portfolio.css">
     <link href='https://fonts.googleapis.com/css?family=Aboreto' rel='stylesheet'>
@@ -21,7 +22,7 @@
 
         <div class="RightContainer">
             <ul class="SocialMedia">
-                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com/eugiekhan/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
                 <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
                 <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
                 <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
@@ -30,10 +31,60 @@
         </div>
     </header>
 
-    <section>
+    <section>       <!--This whole Gallery section operates with the support of JavaScript (portfolio.js)-->
 
-        <p>This space will be used for my Portfolio(Gallery).</p>
-    
+        <div class="ContentArea">
+            <div class="GalleryContainer">      <!--This is the Gallery div that is not visible by default. It contains full-sized photos that will be shown after a resized (e.g.RszdImg1) image is clicked.-->
+                <img src="/gallery/img1_flsz.jpg" alt="" id="FlszImg1">
+                <img src="/gallery/img2_flsz.jpg" alt="" id="FlszImg2">
+                <img src="/gallery/img3_flsz.jpg" alt="" id="FlszImg3">
+                <img src="/gallery/img4_flsz.jpg" alt="" id="FlszImg4">
+                <img src="/gallery/img5_flsz.jpg" alt="" id="FlszImg5">
+                <img src="/gallery/img6_flsz.jpg" alt="" id="FlszImg6">
+                <img src="/gallery/img7_flsz.jpg" alt="" id="FlszImg7">
+                <img src="/gallery/img8_flsz.jpg" alt="" id="FlszImg8">
+                <img src="/gallery/img9_flsz.jpg" alt="" id="FlszImg9">
+                <img src="/gallery/img10_flsz.jpg" alt="" id="FlszImg10">
+                <img src="/gallery/img11_flsz.jpg" alt="" id="FlszImg11">
+                <img src="/gallery/img12_flsz.jpg" alt="" id="FlszImg12">
+                <img src="/gallery/img13_flsz.jpg" alt="" id="FlszImg13">
+                <img src="/gallery/img14_flsz.jpg" alt="" id="FlszImg14">
+                <img src="/gallery/img15_flsz.jpg" alt="" id="FlszImg15">
+                <img src="/gallery/img16_flsz.jpg" alt="" id="FlszImg16">
+                <img src="/gallery/img17_flsz.jpg" alt="" id="FlszImg17">
+                <img src="/gallery/img18_flsz.jpg" alt="" id="FlszImg18">
+                <img src="/gallery/img19_flsz.jpg" alt="" id="FlszImg19">
+                <img src="/gallery/img20_flsz.jpg" alt="" id="FlszImg20">
+            </div>
+
+            <div class="FullSizeImageScreen" id="FullSizeImageScreen">      <!--This div displays a fullsized clicked image-->
+                <img src="" alt="" class="FullSizeImage" id="FullSizeImage">
+                <span class="closeButton" onclick="closeFullSizeImage()"><ion-icon name="close"></ion-icon></span>
+            </div>
+            
+            <div class="ResizedImageContainer">     <!--This is the Gallery div with clickable photo thumbnails.  Each RszdImg# corresponds to its fullsized version FlszImg# in the div above.-->
+                <img src="/gallery/ResizedImages/img1rszd.jpg" alt="" id="RszdImg1" onclick="openFullSizeImage(this.id)">
+                <img src="/gallery/ResizedImages/img2rszd.jpg" alt="" id="RszdImg2" onclick="openFullSizeImage(this.id)">
+                <img src="/gallery/ResizedImages/img3rszd.jpg" alt="" id="RszdImg3" onclick="openFullSizeImage(this.id)">
+                <img src="/gallery/ResizedImages/img4rszd.jpg" alt="" id="RszdImg4" onclick="openFullSizeImage(this.id)">
+                <img src="/gallery/ResizedImages/img5rszd.jpg" alt="" id="RszdImg5" onclick="openFullSizeImage(this.id)">
+                <img src="/gallery/ResizedImages/img6rszd.jpg" alt="" id="RszdImg6" onclick="openFullSizeImage(this.id)">
+                <img src="/gallery/ResizedImages/img7rszd.jpg" alt="" id="RszdImg7" onclick="openFullSizeImage(this.id)">
+                <img src="/gallery/ResizedImages/img8rszd.jpg" alt="" id="RszdImg8" onclick="openFullSizeImage(this.id)">
+                <img src="/gallery/ResizedImages/img9rszd.jpg" alt="" id="RszdImg9" onclick="openFullSizeImage(this.id)">
+                <img src="/gallery/ResizedImages/img10rszd.jpg" alt="" id="RszdImg10" onclick="openFullSizeImage(this.id)">
+                <img src="/gallery/ResizedImages/img11rszd.jpg" alt="" id="RszdImg11" onclick="openFullSizeImage(this.id)">
+                <img src="/gallery/ResizedImages/img12rszd.jpg" alt="" id="RszdImg12" onclick="openFullSizeImage(this.id)">
+                <img src="/gallery/ResizedImages/img13rszd.jpg" alt="" id="RszdImg13" onclick="openFullSizeImage(this.id)">
+                <img src="/gallery/ResizedImages/img14rszd.jpg" alt="" id="RszdImg14" onclick="openFullSizeImage(this.id)">
+                <img src="/gallery/ResizedImages/img15rszd.jpg" alt="" id="RszdImg15" onclick="openFullSizeImage(this.id)">
+                <img src="/gallery/ResizedImages/img16rszd.jpg" alt="" id="RszdImg16" onclick="openFullSizeImage(this.id)">
+                <img src="/gallery/ResizedImages/img17rszd.jpg" alt="" id="RszdImg17" onclick="openFullSizeImage(this.id)">
+                <img src="/gallery/ResizedImages/img18rszd.jpg" alt="" id="RszdImg18" onclick="openFullSizeImage(this.id)">
+                <img src="/gallery/ResizedImages/img19rszd.jpg" alt="" id="RszdImg19" onclick="openFullSizeImage(this.id)">
+                <img src="/gallery/ResizedImages/img20rszd.jpg" alt="" id="RszdImg20" onclick="openFullSizeImage(this.id)">
+            </div>
+        </div>
     </section>
 
     <footer>Eva Kim &#8226; Twin Cities, Minnesota USA &#8226; &nbsp; <a href="https://www.behance.net/evakim_ph" target="_blank">behance.net</a></footer>
